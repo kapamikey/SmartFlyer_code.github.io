@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Retreat Booking Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #002147;
+            color: white;
+            padding: 20px;
+        }
+        main {
+            margin: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+        label, input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #002147;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Skyline Retreat Booking Portal</h1>
+    </header>
+    
+    <main>
+        <section class="gallery">
+            <h2>Our Luxury Accommodations</h2>
+            <img src="/mnt/data/A_luxurious_hotel_accommodation_with_floor-to-ceil.jpg" alt="Luxury Accommodation">
+            <img src="/mnt/data/A_luxurious_rooftop_infinity_pool_on_top_of_a_New_.jpg" alt="Rooftop Pool">
+            <img src="/mnt/data/A_modern_luxury_gym_inside_a_New_York_City_hotel._.jpg" alt="Luxury Gym">
+        </section>
+        
+        <section>
+            <h2>Book Your Stay</h2>
+            <form action="#" method="POST">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type">
+                    <option value="standard">Standard Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="penthouse">Penthouse</option>
+                </select>
+                
+                <label for="promo-code">Promo Code (Optional):</label>
+                <input type="text" id="promo-code" name="promo-code">
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Skyline Retreat by SmartFlyer</p>
+    </footer>
+</body>
+</html>
